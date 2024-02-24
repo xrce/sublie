@@ -1,11 +1,6 @@
-<div align='center'>
-    <br><img height="64" src="https://img.icons8.com/fluency/256/sublime-text.png"><br><br>
-
 ```
 It's called sublie cause you're lying about unlimited user license
 ```
-
-</div>
 
 <details open>
 <summary><b>Install Sublime Text</b></summary>
