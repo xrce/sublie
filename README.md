@@ -1,14 +1,14 @@
 <div align='center'>
-    <h1>Sublime Text Manual Patch</h1>
     <br><img height="64" src="https://img.icons8.com/fluency/256/sublime-text.png"><br><br>
 
 ```
-How to patch Sublime Text to Unlimited User License
+It's called sublie cause you're lying about unlimited user license
 ```
 
 </div>
 
-# Install Sublime Text
+<details open>
+<summary><b>Install Sublime Text</b></summary>
 
 ## Windows
 
@@ -159,11 +159,30 @@ The apt repository contains packages for both x86-64 and arm64.
 2. Extract downloaded file
 3. Drag Sublime Text.app into your Applications folder
 
-# Patch Sublime Text
+</details>
+<details open>
+<summary><b>Patch Sublime Text</b></summary>
+
+## Patch Automatically
+
+You can use ```patcher.py``` for replacing hex if you want
+
+**Usage :**
+```
+python patcher.py -i <input> -o <output>
+```
+**Example :**
+```
+python patcher.py -i sublime_text.exe -o sublime_text.exe
+```
+```
+python patcher.py -i sublime_text
+```
+
+## Patch Manually
 
 1. Go to [HexEd.it](https://hexed.it/)
 2. Click Open file, then put executable file of Sublime Text
-
     **Windows**
     ```
     C:\Program Files\Sublime Text\sublime_text.exe
@@ -184,3 +203,5 @@ The apt repository contains packages for both x86-64 and arm64.
 5. Overwrite it to C6 40 05 01 48 85 C9 as Hexadecimal Values
 6. After that click Save as, rename it to same as Sublime Text executable file
 7. Backup old file, then move modified file to Sublime Text directory
+
+</details>
