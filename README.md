@@ -12,6 +12,7 @@ It's called sublie cause you're lying about unlimited user license
 3. Select destination location, then click Next
 4. You can add Sublime Text to explorer context menu, just check it then click Next
 5. After installation succedded, click Finish
+It's called sublie cause you're lying about unlimited user license
 
 ## Linux
 
@@ -178,6 +179,7 @@ python patcher.py -i sublime_text
 
 1. Go to [HexEd.it](https://hexed.it/)
 2. Click Open file, then put executable file of Sublime Text
+
     **Windows**
     ```
     C:\Program Files\Sublime Text\sublime_text.exe
@@ -193,10 +195,10 @@ python patcher.py -i sublime_text
     /Applications/Sublime Text.app/Contents/MacOS/sublime_text
     ```
 
-3. Search 80 78 05 00 0F 94 C1 in Search for
-4. Click Find Next
-5. Overwrite it to C6 40 05 01 48 85 C9 as Hexadecimal Values
-6. After that click Save as, rename it to same as Sublime Text executable file
-7. Backup old file, then move modified file to Sublime Text directory
+4. Search `80 78 05 00 0F 94 C1` in Search for
+5. Click Find Next
+6. Overwrite it to `C6 40 05 01 48 85 C9` as Hexadecimal Values
+7. After that click Save as, rename it to same as Sublime Text executable file
+8. Backup old file, then move modified file to Sublime Text directory
 
 </details>
