@@ -13,12 +13,10 @@ def replace_hex(infile, outfile, orig, patched):
         data[start:end] = patched
         with open(outfile, 'wb') as f: f.write(data)
         print("File Patched")
-    else: print("Pattern not found")
-
-original = b"\x80\x78\x05\x00\x0F\x94\xC1"
-replaced = b"\xC6\x40\x05\x01\x48\x85\xC9"
+    else: raise Exception("Pattern not found")
 
 infile = input("Input file : ") if not args.infile else args.infile
 outfile = infile if not args.outfile else args.outfile
 
-replace_hex(infile, outfile, original, replaced)
+try: replace_hex(infile, outfile, b"\x80\x78\x05\x00\x0F\x94\xC1", b"\xC6\x40\x05\x01\x48\x85\xC9")
+except: replace_hex(infile, outfile, b"\x80\x79\x05\x00\x0F\x94\xC2", b"\xC6\x41\x05\x01\xB2\x00\x90")
