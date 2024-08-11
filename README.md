@@ -193,10 +193,12 @@ python patcher.py -i sublime_text
     /Applications/Sublime Text.app/Contents/MacOS/sublime_text
     ```
 
-3. Search 80 78 05 00 0F 94 C1 in Search for
+3. Search `80 78 05 00 0F 94 C1` in Search for
 4. Click Find Next
-5. Overwrite it to C6 40 05 01 48 85 C9 as Hexadecimal Values
+5. Overwrite it to `C6 40 05 01 48 85 C9` as Hexadecimal Values
 6. After that click Save as, rename it to same as Sublime Text executable file
 7. Backup old file, then move modified file to Sublime Text directory
+
+> For newer version like `4180`, search for `80 79 05 00 0F 94 C2` then replace with `C6 41 05 01 B2 00 90`
 
 </details>
